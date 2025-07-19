@@ -1,4 +1,4 @@
-import {UserProps} from "@/interfaces"
+import { UserProps } from "@/interfaces"
 const UserCard: React.FC<UserProps> =({id, name, username, phone, email, website, address, company})=>{
 
     return(
