@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 import { PostProps } from "@/interfaces";
 import { PostsProps } from "@/interfaces";
 const Posts: React.FC<PostsProps> = ({ posts }) => {
-  console.log(posts)
+  //console.log(posts)
   return (
     <div className="flex flex-col h-screen">
       <Header />
