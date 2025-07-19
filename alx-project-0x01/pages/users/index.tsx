@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header"
 import { UserProps } from "@/interfaces"
 import { UsersProps } from "@/interfaces"
 const Users : React.FC<UsersProps> =({posts})=>{
-    console.log(posts)
+    //console.log(posts)
     return(
         <div className="user mx-3">
             <Header/>
