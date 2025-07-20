@@ -1,3 +1,4 @@
+//post interfaces
 export interface PostProps {
   userId: number;
   id: number;
@@ -9,6 +10,7 @@ export interface PostsProps {
   posts: PostProps[];
 }
 
+//user interfaces
 export interface geo{
   lat : string;
   lng : string;
@@ -41,6 +43,7 @@ export interface UsersProps {
   posts: UserProps[];
 }
 
+//post modal interfaces
 export interface PostData {
   userId: number;
   id?: number;
@@ -51,4 +54,22 @@ export interface PostData {
 export interface PostModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
+}
+
+//user modal interfaces
+
+export interface UserData {
+  id?: number;
+  name: string;
+  username: string;
+  email: string;
+  address: address;
+  phone: string;
+  website: string;
+  company: company
+}
+
+export interface UserModalProps {
+  onClose: () => void;
+  onSubmit: (post: UserData) => void;
 }

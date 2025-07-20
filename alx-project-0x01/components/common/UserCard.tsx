@@ -1,9 +1,12 @@
 import { UserProps } from "@/interfaces"
+//import Image from "next/image"
 const UserCard: React.FC<UserProps> =({id, name, username, phone, email, website, address, company})=>{
 
     return(
         <div className="bg-blue-950 text-white p-3 flex justify-between items-center rounded-xl">
-            <div className="bg-white w-1/3 h-full mr-4 rounded-full"></div>
+            <div className="bg-[url(/téléchargement.jpg)] w-1/3 h-full mr-4 rounded-full">
+                {/* <Image src="/téléchargement.jpg" alt="Default image" width="100" height="100" /> */}
+            </div>
             <div className="text-white h-auto w-2/3 ">
                 <p className=""> Id : <span className="text-yellow-300 italic">{id}</span></p>
                 <p className="">Name : <span className="text-yellow-300 italic">{name}</span></p>
